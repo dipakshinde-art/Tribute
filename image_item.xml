@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="#80bd9e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/text_view">
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:text="NAME"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/txtPost"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Posted it to Timeline"/>
+        <ImageView
+            android:id="@+id/image_view_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:id="@+id/likeBtn"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/redheart"
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="8dp"
+                android:topRightRadius="8dp"
+                android:topLeftRadius="8dp"
+                />
+
+            <TextView
+                android:id="@+id/likesCount"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="00"
+                android:textSize="35dp"
+                android:textColor="@color/white"/>
+        <ImageButton
+            android:id="@+id/commentBtn"
+            android:layout_marginLeft="60dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/comment"/>
+
+            <TextView
+                android:id="@+id/commentsCount"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="00"
+                android:textSize="35dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
